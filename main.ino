@@ -186,6 +186,7 @@ void loop() {
     }
     else {
       // If wrong reset
+      win = false;
       delay(500);
       loseSong();
       delay(500);
