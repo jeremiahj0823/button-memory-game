@@ -19,7 +19,7 @@ vector<float> melody = {nC4, nE4, nG4, nC5};
 
 int levelToBeat = 5;
 
-void flashSequence(const vector<int> &guessVector, int level) {
+void flashSequence(vector<int> guessVector, int level) {
   for (int i = 0; i < level; i++) {
     int j = guessVector[i];
     digitalWrite(ledPins[j], HIGH);
